@@ -1,0 +1,10 @@
+# Node modules
+node_modules/
+my-portfolio/node_modules/
+
+# Build output
+my-portfolio/dist/
+
+# System files
+.DS_Store
+Thumbs.db
