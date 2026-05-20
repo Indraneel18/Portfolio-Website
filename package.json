@@ -1,0 +1,13 @@
+{
+  "name": "portfolio",
+  "scripts": {
+    "dev": "cd my-portfolio && npm run dev",
+    "build": "cd my-portfolio && npm run build",
+    "preview": "cd my-portfolio && npm run preview"
+  },
+  "dependencies": {
+    "@iconify-svelte/weui": "^1.0.2",
+    "@tailwindcss/vite": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+  }
+}
