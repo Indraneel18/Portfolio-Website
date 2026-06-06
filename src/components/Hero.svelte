@@ -164,7 +164,7 @@
     <div class="hero-copy">
       <p class="eyebrow">Hi There,</p>
       <h1>I'm Indraneel <span>Chowdhury</span></h1>
-      <p class="role">I Am Into <span>Web Development</span> |</p>
+      <p class="role">I Am Into <span>Web Development</span></p>
 
       <a class="about-link" href="#about">
         About Me
@@ -174,17 +174,19 @@
       </a>
 
       <div class="social-links" aria-label="Social links">
-        <a href="https://github.com/" aria-label="GitHub">
+        <a href="https://github.com/Indraneel18" aria-label="GitHub">
           <svg><use href="/icons.svg#github-icon" /></svg>
         </a>
-        <a href="https://x.com/" aria-label="X">
+        <a href="https://x.com/IndraneelC18" aria-label="X">
           <svg><use href="/icons.svg#x-icon" /></svg>
         </a>
-        <a href="https://www.linkedin.com/" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/indraneel-chowdhury-a02432345?utm_source=share_via&utm_content=profile&utm_medium=member_android" aria-label="LinkedIn">
           <span>in</span>
         </a>
-        <a href="#contact" aria-label="Contact">
-          <svg><use href="/icons.svg#social-icon" /></svg>
+        <a href="https://t.me/hotfriesss" aria-label="Telegram">
+          <svg class="telegram-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21.6 3.3 18.4 19c-.2 1.1-.9 1.4-1.8.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6 12.8 1.2 11.3c-1-.3-1-1 .2-1.5L20 2.7c.9-.3 1.8.2 1.6.6Z" />
+          </svg>
         </a>
       </div>
     </div>
@@ -246,9 +248,16 @@
 
   .role {
     margin: 2rem 0 1.8rem;
+    border-right: 0;
     color: #090909;
+    caret-color: transparent;
     font-size: clamp(1.45rem, 2.2vw, 2rem);
     font-weight: 800;
+  }
+
+  .role::after {
+    display: none;
+    content: none;
   }
 
   .role span {
