@@ -7,9 +7,15 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Node modules
+node_modules/
+my-portfolio/node_modules/
+
+# Build output
+dist/
+dist-ssr/
+my-portfolio/dist/
+
 *.local
 
 # Editor directories and files
@@ -17,6 +23,7 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
