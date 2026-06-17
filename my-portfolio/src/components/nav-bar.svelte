@@ -1,17 +1,40 @@
+<script>
+    let isMenuOpen = false;
+
+    function toggleMenu() {
+        isMenuOpen = !isMenuOpen;
+    }
+
+    function closeMenu() {
+        isMenuOpen = false;
+    }
+</script>
+
 <nav aria-label="Primary navigation">
     <a class="brand" href="#home" aria-label="Indraneel home">
         <span class="brand-mark">I</span>
         <span>Indraneel</span>
     </a>
 
-    <div class="nav-links">
-        <a class="active" href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+    <button 
+        class="hamburger" 
+        aria-label="Toggle navigation menu" 
+        aria-expanded={isMenuOpen}
+        on:click={toggleMenu}
+    >
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+
+    <div class="nav-links" class:open={isMenuOpen}>
+        <a class="active" href="#home" on:click={closeMenu}>Home</a>
+        <a href="#about" on:click={closeMenu}>About</a>
+        <a href="#skills" on:click={closeMenu}>Skills</a>
+        <a href="#education" on:click={closeMenu}>Education</a>
+        <a href="#projects" on:click={closeMenu}>Projects</a>
+        <a href="#experience" on:click={closeMenu}>Experience</a>
+        <a href="#contact" on:click={closeMenu}>Contact</a>
     </div>
 </nav>
 
@@ -102,18 +125,69 @@
         transform: scaleX(1);
     }
 
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 0.35rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+        position: relative;
+        z-index: 11;
+    }
+
+    .hamburger-line {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background: #061f55;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
     @media (max-width: 980px) {
         nav {
-            align-items: flex-start;
-            flex-direction: column;
+            align-items: center;
+            flex-direction: row;
             gap: 0.9rem;
             min-height: auto;
             padding-block: 1rem;
+            justify-content: space-between;
+        }
+
+        .hamburger {
+            display: flex;
         }
 
         .nav-links {
-            justify-content: flex-start;
+            position: absolute;
+            top: 78px;
+            left: 0;
+            right: 0;
+            flex-direction: column;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(6, 31, 85, 0.08);
+            padding: 1rem;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
             width: 100%;
+            justify-content: flex-start;
+        }
+
+        .nav-links.open {
+            max-height: 500px;
+            opacity: 1;
+            padding: 1rem;
+        }
+
+        .nav-links a {
+            padding: 0.7rem 1rem;
+            border-radius: 6px;
         }
     }
 
@@ -133,11 +207,23 @@
 
         .nav-links {
             gap: 0.15rem;
+            top: 72px;
+            padding: 0.75rem;
+        }
+
+        .nav-links.open {
+            max-height: 400px;
+            padding: 0.75rem;
         }
 
         .nav-links a {
             font-size: 0.9rem;
             padding: 0.55rem 0.7rem;
+        }
+
+        .hamburger-line {
+            width: 24px;
+            height: 2.5px;
         }
     }
 </style>
