@@ -29,8 +29,6 @@
 
       <p class="detail"><span>Email :</span> indraneelchowdhury1818@gmail.com</p>
       <p class="detail"><span>Place :</span> Assam, India</p>
-
-      <a class="resume-link" href=" ">Resume</a>  // pending: Add resume link
     </div>
   </div>
 </main>
@@ -140,35 +138,6 @@
   .detail span {
     color: #0647ff;
     font-weight: 700;
-  }
-
-  .resume-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 58px;
-    margin-top: 48px;
-    padding: 0 38px;
-    border-radius: 6px;
-    background: #2706bf;
-    color: #ffffff;
-    font-size: 23px;
-    font-weight: 600;
-    letter-spacing: 0;
-    text-decoration: none;
-    box-shadow: 0 10px 18px rgba(39, 6, 191, 0.28);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-
-  .resume-link::after {
-    margin-left: 9px;
-    font-size: 18px;
-    line-height: 1;
-  }
-
-  .resume-link:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 14px 24px rgba(39, 6, 191, 0.32);
   }
 
   @media (max-width: 820px) {

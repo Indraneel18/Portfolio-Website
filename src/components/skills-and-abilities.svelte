@@ -1,4 +1,6 @@
 <script>
+  import cLogo from '../assets/C logo.jpeg';
+
   const skills = [
     {
       name: 'GitHub',
@@ -32,7 +34,7 @@
     },
     {
       name: 'C',
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg'
+      icon: cLogo
     },
     {
       name: 'C++',
