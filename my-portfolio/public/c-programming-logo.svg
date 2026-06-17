@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="C programming language logo">
+  <defs>
+    <linearGradient id="hex-gradient" x1="58" x2="211" y1="37" y2="219" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6f7fd6" />
+      <stop offset="1" stop-color="#202b9b" />
+    </linearGradient>
+    <linearGradient id="fold-gradient" x1="122" x2="226" y1="160" y2="106" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2533a0" />
+      <stop offset="1" stop-color="#384fc0" />
+    </linearGradient>
+  </defs>
+
+  <path
+    fill="url(#hex-gradient)"
+    d="M128 14.6c4.7 0 9.4 1.2 13.5 3.6l80.9 46.7c8.3 4.8 13.4 13.7 13.4 23.3v93.5c0 9.6-5.1 18.5-13.4 23.3l-80.9 46.7a27 27 0 0 1-27 0L33.6 205a26.9 26.9 0 0 1-13.4-23.3V88.2c0-9.6 5.1-18.5 13.4-23.3l80.9-46.7c4.1-2.4 8.8-3.6 13.5-3.6Z"
+  />
+  <path
+    fill="#ffffff"
+    d="M129.6 50.7c42.2 0 78.6 28.2 89.7 68.1l-43.5 24.8a47.2 47.2 0 0 0-46.2-37.6c-26.2 0-47.4 21.7-47.4 48.4s21.2 48.3 47.4 48.3a47.4 47.4 0 0 0 46.9-39.8l43.4 24.9c-13 41.7-48.3 70.2-90.3 70.2-55.9 0-101.2-46.4-101.2-103.6S73.7 50.7 129.6 50.7Z"
+  />
+  <path
+    fill="url(#fold-gradient)"
+    d="M236 88.2v93.5c0 6.2-2.1 12.1-5.9 16.9l-101.2-58.5 101.3-58.3c3.7 4.8 5.8 10.4 5.8 16.4Z"
+    opacity="0.96"
+  />
+  <path
+    fill="#ffffff"
+    d="M129.6 107.2c19.5 0 36.3 11.9 43.6 28.8l-44.3 25.6 43.6 25.2a47.2 47.2 0 0 1-42.9 27.2c-32.4 0-58.7-26.7-58.7-59.6s26.3-47.2 58.7-47.2Z"
+  />
+</svg>
